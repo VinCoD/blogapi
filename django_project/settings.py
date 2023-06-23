@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd-party apps
     "rest_framework",
+    "corsheaders",
     # Local
     "accounts.apps.AccountsConfig", # new
     "posts.apps.PostsConfig", # new
@@ -135,3 +136,11 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.AllowAny",
     ],
 }
+
+CORS_ORIGIN_WHITELIST = (
+    "http://localhost:3000",
+    "http://localhost:8000",
+)
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+

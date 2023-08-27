@@ -5,3 +5,5 @@ accounts/migrations/__pycache__/
 django_project/__pycache__/
 posts/__pycache__/
 posts/migrations/__pycache__/
+.env
+db.sqlite3
